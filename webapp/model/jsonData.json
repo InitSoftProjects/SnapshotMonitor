@@ -1,0 +1,104 @@
+{
+    "snapshots": [
+        {
+            "Snapshot": "1",
+            "SGroup": "Product A",
+            "GroupName": "Category 1",
+            "SnapshotID": 100,
+            "SnapshotDT": "2024-11-21",
+            "RunStatus": "Finished",
+            "NumRuns": 283714,
+            "isActive": true
+        },
+        {
+            "Snapshot": "2",
+            "SGroup": "Product B",
+            "GroupName": "Category 2",
+            "SnapshotID": 101,
+            "SnapshotDT": "2024-11-22",
+            "RunStatus": "Running",
+            "NumRuns": 150345,
+            "isActive": false
+        },
+        {
+            "Snapshot": "3",
+            "SGroup": "Product A",
+            "GroupName": "Category 1",
+            "SnapshotID": 102,
+            "SnapshotDT": "2024-11-23",
+            "RunStatus": "Error",
+            "NumRuns": 93841,
+            "isActive": true
+        },
+        {
+            "Snapshot": "4",
+            "SGroup": "Product C",
+            "GroupName": "Category 3",
+            "SnapshotID": 103,
+            "SnapshotDT": "2024-11-24",
+            "RunStatus": "Finished",
+            "NumRuns": 489672,
+            "isActive": true
+        },
+        {
+            "Snapshot": "5",
+            "SGroup": "Product B",
+            "GroupName": "Category 2",
+            "SnapshotID": 104,
+            "SnapshotDT": "2024-11-20",
+            "RunStatus": "Paused",
+            "NumRuns": 274853,
+            "isActive": false
+        },
+        {
+            "Snapshot": "6",
+            "SGroup": "Product D",
+            "GroupName": "Category 4",
+            "SnapshotID": 105,
+            "SnapshotDT": "2024-11-29",
+            "RunStatus": "Running",
+            "NumRuns": 320145,
+            "isActive": true
+        },
+        {
+            "Snapshot": "7",
+            "SGroup": "Product A",
+            "GroupName": "Category 1",
+            "SnapshotID": 106,
+            "SnapshotDT": "2024-11-20",
+            "RunStatus": "Finished",
+            "NumRuns": 193854,
+            "isActive": true
+        },
+        {
+            "Snapshot": "8",
+            "SGroup": "Product C",
+            "GroupName": "Category 3",
+            "SnapshotID": 107,
+            "SnapshotDT": "2024-10-30",
+            "RunStatus": "Error",
+            "NumRuns": 120975,
+            "isActive": false
+        },
+        {
+            "Snapshot": "9",
+            "SGroup": "Product D",
+            "GroupName": "Category 4",
+            "SnapshotID": 108,
+            "SnapshotDT": "2024-11-24",
+            "RunStatus": "Paused",
+            "NumRuns": 234572,
+            "isActive": true
+        },
+        {
+            "Snapshot": "10",
+            "SGroup": "Product B",
+            "GroupName": "Category 2",
+            "SnapshotID": 109,
+            "SnapshotDT": "2024-11-01",
+            "RunStatus": "Finished",
+            "NumRuns": 500321,
+            "isActive": true
+        }
+    ]
+}

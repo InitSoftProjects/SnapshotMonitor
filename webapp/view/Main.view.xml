@@ -1,0 +1,87 @@
+<mvc:View controllerName="com.arumatech.SnapshotMonitor.controller.Main"
+     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.f"
+    xmlns:fb="sap.ui.comp.filterbar"
+    xmlns:svm="sap.ui.comp.smartvariants"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+        <f:DynamicPage headerExpanded="{/headerExpanded}" showFooter="true" >
+			<f:header>
+				<f:DynamicPageHeader>
+					<f:content>
+						<fb:FilterBar id="filterbar" useToolbar="false" search=".onSearch" filterChange=".onFilterChange" >
+							<fb:filterGroupItems>
+								<fb:FilterGroupItem name="SnapshotID" label="Snapshot ID" groupName="Group1" visibleInFilterBar="true">
+									<fb:control>
+										<Input name="SnapshotID" showClearIcon="true" change="onSelectionChange" ></Input>
+									</fb:control>
+								</fb:FilterGroupItem>
+								<fb:FilterGroupItem name="SnapshotDT" label="Snapshot Date" groupName="Group1" visibleInFilterBar="true">
+									<fb:control>
+										<DatePicker name="SnapshotDT" valueFormat="yyyy-MM-dd" displayFormat="long" change="onSelectionChange" ></DatePicker>
+									</fb:control>
+								</fb:FilterGroupItem>
+							</fb:filterGroupItems>
+						</fb:FilterBar>
+					</f:content>
+				</f:DynamicPageHeader>
+			</f:header>
+			<f:content>
+				<Table
+					id="table"
+					inset="false"
+					items="{
+						path: '/snapshots'
+					}"
+				>
+					<columns>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Snapshot ID"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="S Group"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Group Name"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Snapshot"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="SnapshotDT"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Run Status"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Number of Runs"/>
+						</Column>
+						<Column minScreenWidth="Tablet" demandPopin="true">
+							<Text text="Active"/>
+						</Column>
+					</columns>
+
+					<items>
+						<ColumnListItem id="_IDGenColumnListItem" vAlign="Middle">
+							<cells>
+								<Text text="{SnapshotID}" />
+								<Text text="{SGroup}" />
+								<Text text="{GroupName}" />
+								<Text text="{Snapshot}" />
+								<Text text="{path: 'SnapshotDT', formatter:'.formatter.formateDate'}" />
+								<Text text="{RunStatus}" />
+								<Text text="{NumRuns}" />
+								<CheckBox enabled="false" selected="{isActive}"></CheckBox>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</f:content>
+			<f:footer>
+				<OverflowToolbar>
+					<ToolbarSpacer/>
+					<Button type="Accept" text="Create Snapshot" press="onCreateSnapshot"/>
+				</OverflowToolbar>
+			</f:footer>
+		</f:DynamicPage>
+    </mvc:View>
