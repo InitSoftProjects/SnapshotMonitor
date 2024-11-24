@@ -1,4 +1,4 @@
-<mvc:View controllerName="com.arumatech.SnapshotMonitor.controller.Main"
+<mvc:View controllerName="com.arumatech.snapshotmonitor.controller.Main"
      xmlns:mvc="sap.ui.core.mvc"
     xmlns:f="sap.f"
     xmlns:fb="sap.ui.comp.filterbar"

@@ -1,5 +1,5 @@
 sap.ui.define([
-	"comarumatech/SnapshotMonitor/test/unit/controller/Main.controller"
+	"comarumatech/snapshotmonitor/test/unit/controller/Main.controller"
 ], function () {
 	"use strict";
 });

@@ -1,10 +1,10 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
-    "com/arumatech/SnapshotMonitor/model/models"
+    "com/arumatech/snapshotmonitor/model/models"
 ], (UIComponent, models) => {
     "use strict";
 
-    return UIComponent.extend("com.arumatech.SnapshotMonitor.Component", {
+    return UIComponent.extend("com.arumatech.snapshotmonitor.Component", {
         metadata: {
             manifest: "json",
             interfaces: [

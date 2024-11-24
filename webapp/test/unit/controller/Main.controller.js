@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"comarumatech/SnapshotMonitor/controller/Main.controller"
+	"comarumatech/snapshotmonitor/controller/Main.controller"
 ], function (Controller) {
 	"use strict";
 

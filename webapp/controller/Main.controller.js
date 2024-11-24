@@ -1,14 +1,14 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
-    "com/arumatech/model/formatter",
+    "com/arumatech/snapshotmonitor/model/formatter",
 	'sap/ui/model/Filter',
 	'sap/ui/model/FilterOperator',
-  "sap/ui/core/UIComponent"
+    "sap/ui/core/UIComponent"
 ],
 function (Controller, JSONModel, formatter, Filter, FilterOperator, UIComponent) {
     "use strict";
-    return Controller.extend("com.arumatech.SnapshotMonitor.controller.Main", {
+    return Controller.extend("com.arumatech.snapshotmonitor.controller.Main", {
         formatter: formatter,
         onInit: function () {
             this.oFilterBar = this.getView().byId("filterbar");

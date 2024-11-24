@@ -8,7 +8,7 @@
 |**Template Used**<br>simple|
 |**Service Type**<br>None|
 |**Service URL**<br>N/A|
-|**Module Name**<br>SnapshotMonitor|
+|**Module Name**<br>snapshotmonitor|
 |**Application Title**<br>Snapshot Monitor|
 |**Namespace**<br>com.arumatech|
 |**UI5 Theme**<br>sap_horizon|
@@ -17,7 +17,7 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 
-## SnapshotMonitor
+## snapshotmonitor
 
 An SAP Fiori application.
 

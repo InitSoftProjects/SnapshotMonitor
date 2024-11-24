@@ -3,7 +3,7 @@
 QUnit.config.autostart = false;
 
 sap.ui.require([
-	"comarumatech/SnapshotMonitor/test/unit/AllTests"
+	"comarumatech/snapshotmonitor/test/unit/AllTests"
 ], function (Controller) {
 	"use strict";
 	QUnit.start();

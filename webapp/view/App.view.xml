@@ -1,4 +1,4 @@
-<mvc:View controllerName="com.arumatech.SnapshotMonitor.controller.App"
+<mvc:View controllerName="com.arumatech.snapshotmonitor.controller.App"
     displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">

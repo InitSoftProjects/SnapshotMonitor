@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "com.arumatech.SnapshotMonitor.view.",
+		viewNamespace: "com.arumatech.snapshotmonitor.view.",
 		autoWait: true
 	});
 });

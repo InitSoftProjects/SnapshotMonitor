@@ -14,7 +14,7 @@ sap.ui.define([
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "com.arumatech.SnapshotMonitor",
+					name: "com.arumatech.snapshotmonitor",
 					async: true
 				},
 				hash: oOptions.hash,
