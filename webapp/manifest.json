@@ -55,6 +55,10 @@
                 "settings": {
                     "bundleName": "com.arumatech.snapshotmonitor.i18n.i18n"
                 }
+            },
+            "viewModel": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/jsonData.json"
             }
         },
         "resources": {

@@ -31,7 +31,7 @@
 					id="table"
 					inset="false"
 					items="{
-						path: '/snapshots'
+						path: 'viewModel>/snapshots'
 					}"
 				>
 					<columns>
@@ -64,14 +64,14 @@
 					<items>
 						<ColumnListItem id="_IDGenColumnListItem" vAlign="Middle">
 							<cells>
-								<Text text="{SnapshotID}" />
-								<Text text="{SGroup}" />
-								<Text text="{GroupName}" />
-								<Text text="{Snapshot}" />
-								<Text text="{path: 'SnapshotDT', formatter:'.formatter.formateDate'}" />
-								<Text text="{RunStatus}" />
-								<Text text="{NumRuns}" />
-								<CheckBox enabled="false" selected="{isActive}"></CheckBox>
+								<Text text="{viewModel>SnapshotID}" />
+								<Text text="{viewModel>SGroup}" />
+								<Text text="{viewModel>GroupName}" />
+								<Text text="{viewModel>Snapshot}" />
+								<Text text="{path: 'viewModel>SnapshotDT', formatter:'.formatter.formateDate'}" />
+								<Text text="{viewModel>RunStatus}" />
+								<Text text="{viewModel>NumRuns}" />
+								<CheckBox enabled="false" selected="{viewModel>isActive}"></CheckBox>
 							</cells>
 						</ColumnListItem>
 					</items>

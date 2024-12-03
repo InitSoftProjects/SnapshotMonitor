@@ -15,11 +15,11 @@ function (Controller, JSONModel, formatter, Filter, FilterOperator, UIComponent)
 			this.oTable = this.getView().byId("table");
 
             // Create JSON model
-            var oModel = new JSONModel();
-            oModel.loadData("/model/jsonData.json");
+            // var oModel = new JSONModel();
+            // oModel.loadData("/model/jsonData.json");
 
             // Set the model to the view
-            this.getView().setModel(oModel);
+            // this.getView().setModel(oModel);
         },
 
         onSearch: function () {
