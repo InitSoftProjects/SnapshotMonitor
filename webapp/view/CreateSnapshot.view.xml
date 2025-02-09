@@ -25,13 +25,13 @@
                     singleContainerFullSize="false" >
                     <f:content>
                         <Label text="Snapshot ID" />
-                        <Input id="SnapshotID" value="" />
+                        <Input id="SnapshotID" value="{viewModel>/snapID}" />
 
                         <Label text="Snapshot Type" />
-                        <Input id="SnapshotType" value="" />
+                        <Input id="SnapshotType" value="{viewModel>/snapType}" />
 
                         <Label text="Snapshot Date" />
-                        <DatePicker id="snDate" value="" />
+                        <DatePicker id="snDate" value="{viewModel>/snapDate}" />
                     </f:content>
                 </f:SimpleForm>
             </VBox>
@@ -40,7 +40,7 @@
             <OverflowToolbar>
                 <ToolbarSpacer/>
                 <Button type="Accept" text="Create Snapshot" press="onCreateSnapshot"/>
-                <Button type="Reject" text="Reset"></Button>
+                <Button type="Reject" text="Reset" press="onResetPress"></Button>
             </OverflowToolbar>
         </footer>
     </Page>
